@@ -1,0 +1,23 @@
+@use 'variaveis';
+
+.footer {
+    padding: 26px 8px;
+    background-color: variaveis.$footer;
+
+    &__container {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+    }
+
+    p {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        color: variaveis.$corTextoSecundario;
+    }
+}

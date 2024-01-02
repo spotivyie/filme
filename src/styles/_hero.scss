@@ -1,0 +1,61 @@
+@use 'variaveis';
+
+.hero {
+    width: 100%;
+    align-items: center;
+    padding: 5.6vw;
+    min-height: 94vh;
+    text-align: left;
+    background-size: cover;
+    background-image: url(../images/interstellares.jpg);
+
+    @media (max-width: 1024px) {
+        min-height: 80vh;
+    }
+
+    &__content {
+        display: block;
+        position: relative;
+        max-width: 440px;
+        color: #fff;
+
+        h3 {
+            font-size: 40px;
+            margin-top: 60px;
+            margin-bottom: 44px;
+
+            @media (max-width: 1024px) {
+                margin-top: 100px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__assistir {
+        display: flex;
+
+        img {
+            cursor: pointer;
+        }
+
+        button {
+            font-size: 18px;
+            border-radius: 8px;
+            padding: 6px;
+            margin-left: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+    }
+}
